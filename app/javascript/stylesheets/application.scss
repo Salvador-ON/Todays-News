@@ -1,0 +1,16 @@
+@import "bootstrap";
+@import '@fortawesome/fontawesome-free';
+  
+html {
+  min-height: 100%;
+}
+body {
+  min-height: 100%;
+  background: rgb(0,107,244);
+  background: linear-gradient(0deg, rgba(0,107,244,1) 0%, rgba(67,72,110,1) 100%);
+}
+
+.title {
+  font-family: 'Times New Roman', Times, serif
+}
+
