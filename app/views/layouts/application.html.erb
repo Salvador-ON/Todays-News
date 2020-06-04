@@ -14,49 +14,52 @@
       <img src="images/news-logo.png" alt="logo" class="min-vw-50" />
     </div>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Breaking News <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sports</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Economy</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Business</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Entertainment</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Tech</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Breaking News <span class="sr-only">(current)</span></a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Economy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tech</a>
+          </li>
+        </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
 
     <%= yield %>
+
+    <footer class="bg-danger d-flex justify-content-center text-white align-items-center flex-wrap"> 
+      <span class="mx-2">© 2020 Today's News</span>
+      <span class="mx-2">Contact</span>
+      <span class="mx-2">PrivacyTerms</span>
+      <span class="mx-2">ServiceTerms</span>
+      <Span class="mx-2">Subscriptions</Span>
+      <span class="mx-2">Help</span>
+      <span class="mx-2">Your Ad Choices</span>
+    </footer>
   </body>
 
-  <footer class="bg-danger d-flex justify-content-center text-white align-items-center flex-wrap"> 
-    <span class="mx-2">© 2020 Today's News</span>
-    <span class="mx-2">Contact</span>
-    <span class="mx-2">PrivacyTerms</span>
-    <span class="mx-2">ServiceTerms</span>
-    <Span class="mx-2">Subscriptions</Span>
-    <span class="mx-2">Help</span>
-    <span class="mx-2">Your Ad Choices</span>
-  </footer>
+  
 </html>

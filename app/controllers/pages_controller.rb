@@ -8,16 +8,12 @@ class PagesController < ApplicationController
       @articlesTop = @articles.take 3
       @articles = @articles.drop 3
       @totalPages = @articles.length() / articlesPage
-      
     end
 
     if(@articles.length() > 0)
       @articlesPagination = @articles[@currentpage*articlesPage, articlesPage]
     end
     @articlesPagination
-  end
-
-  def news
   end
 
   def getApi
