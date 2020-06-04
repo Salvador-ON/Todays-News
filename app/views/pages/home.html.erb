@@ -1,8 +1,35 @@
 <nav class="navbar navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
     <i class="far fa-newspaper fa-2x"></i>
-     <span class="title h2">Today's News</span> 
+    <span class="title h2">Today's News</span> 
   </a>
 </nav>
 
+<div class="container-fluid">
+  <div class="row d-flex justify-content-center">
+     <%@articlesPagination.each do |element| %>
+    <div class="card m-2" style="width: 18rem;">
+      <a href="<%=element["url"]%>" target="_blank" class="text-dark">
+      <img class="card-img-top" src="<%=element["urlToImage"]%>" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%=element["title"]%></h5>
+        <p class="card-text"><%=element["source"]%></p>
+      </a>
+      </div>
+    </div>
+  <%end%>
+  </div>
+ 
+</div>
+
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
 
