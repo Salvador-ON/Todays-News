@@ -5,7 +5,7 @@
   </a>
 </nav>
 
-<div class="container-fluid">
+<div class="container-fluid my-4">
   <div class="row d-flex justify-content-center">
      <%@articlesPagination.each do |element| %>
     <div class="card m-2" style="width: 18rem;">
@@ -23,13 +23,25 @@
 </div>
 
 
+<div class="d-flex justify-content-center mt-4">
 <nav aria-label="Page navigation example">
   <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    <%if (@currentpage > 1)%>
+      <li class="page-item"><a class="page-link" href="?page=<%=(@currentpage-1)%>">Previous</a></li>
+    <%end%>
+
+    
+    <%@totalPages.times do |i|%>
+    <li class="page-item"><a class="page-link" href="?page=<%=i+1%>"><%=i+1%></a></li>
+    <%end%>
+
+    <%if (@currentpage < @totalPages)%>
+      <li class="page-item"><a class="page-link" href="?page=<%=(@currentpage+1)%>">Next</a></li>
+    <%end%>
+    
   </ul>
 </nav>
+</div>
+
+
 

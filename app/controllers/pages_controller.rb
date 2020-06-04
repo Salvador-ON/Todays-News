@@ -1,17 +1,16 @@
 class PagesController < ApplicationController
   def home
     articlesPage = 3
-    pages = params.fetch(:page,0).to_i
+    @currentpage = params.fetch(:page,0).to_i
     
     if(@articles.nil?)
       @articles = getApi()
+      @totalPages = @articles.length() / articlesPage
       
     end
 
     if(@articles.length() > 0)
-      @articlesPagination = @articles[pages*articlesPage, articlesPage]
-
-      puts @articlesPagination
+      @articlesPagination = @articles[@currentpage*articlesPage, articlesPage]
     end
     @articlesPagination
   end
