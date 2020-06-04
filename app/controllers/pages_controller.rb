@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
     articlesPage = 3
-    @currentpage = params.fetch(:page,0).to_i
+    @currentpage = params.fetch(:page,1).to_i
     
     if(@articles.nil?)
       @articles = getApi()

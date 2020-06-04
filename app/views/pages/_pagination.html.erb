@@ -1,0 +1,12 @@
+<%if (@currentpage > 1)%>
+      <li class="page-item"><a class="page-link" href="?page=<%=(@currentpage-1)%>">Previous</a></li>
+    <%end%>
+
+    
+    <%@totalPages.times do |i|%>
+    <li class="<%=((@currentpage == i+1)|| (@currentpage == 1 && i+1 == 1) ? "page-item active" : "page-item" )%>"><a class="page-link" href="?page=<%=i+1%>"><%=i+1%></a></li>
+    <%end%>
+
+    <%if (@currentpage < @totalPages)%>
+      <li class="page-item"><a class="page-link" href="?page=<%=(@currentpage+1)%>">Next</a></li>
+    <%end%>

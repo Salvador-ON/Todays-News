@@ -1,0 +1,11 @@
+<%@articlesPagination.each do |element| %>
+    <div class="card m-2" style="width: 18rem;">
+      <a href="<%=element["url"]%>" target="_blank" class="text-dark">
+      <img class="card-img-top" src="<%=element["urlToImage"]%>" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%=element["title"]%></h5>
+        <p class="card-text"><%=element["source"]%></p>
+      </a>
+      </div>
+    </div>
+  <%end%>
