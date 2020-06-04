@@ -36,10 +36,23 @@ class PagesController < ApplicationController
       article["title"] = element["title"]
       article["url"] = element["url"]
       article["urlToImage"] = element["urlToImage"]
-
+      article["author"] = getAutor()
       articles.push(article)
     end
     articles
+  end
+
+  def getAutor
+    require 'open-uri'
+    require 'json'
+    url = 'https://randomuser.me/api/'
+    req = open(url)
+    response_body = JSON.parse(req.read)
+    author = Hash.new 
+    author["first"] = response_body["results"][0]["name"]["first"]
+    author["last"] = response_body["results"][0]["name"]["last"]
+    author["pic"] = response_body["results"][0]["picture"]["thumbnail"]
+    author
   end
 
 end
