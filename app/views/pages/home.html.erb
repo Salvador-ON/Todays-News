@@ -1,13 +1,81 @@
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
-    <i class="far fa-newspaper fa-2x"></i>
-    <span class="title h2">Today's News</span> 
-  </a>
+<div class="d-flex justify-content-center">
+  <img src="images/news-logo.png" alt="logo" class="min-vw-50" />
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Breaking News <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sports</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Economy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Business</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Entertainment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tech</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
 </nav>
 
-<div class="container-fluid my-4">
+<div class="container my-4">
   <div class="row d-flex justify-content-center">
-    <%= render partial:'displayCard' %>
+    <div class="col-12 col-md-6">
+      <div class="firstArticle d-flex flex-wrap align-content-between" style="background-image: url('https://i.picsum.photos/id/2/800/600.jpg'); background-size: cover;">
+        <div class="w-100">
+          <h3 class="h2"> <span class="badge badge-danger  sourcePosition text-white">Source</span></h3>
+        </div>
+        <div class="colorGrad w-100">
+          <h3 class="h4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum minus maiores. Repellendus, ipsam.</h3>
+          <h5 class="h5 text-white font-weight-bold">Author</h5>
+        </div>
+      </div>
+    </div>
+     <div class="col-11 mt-2 mt-md-0 col-md-4">
+      <div class="row">
+     <div class="col-12 px-0">
+      <div class="secondArticle d-flex flex-wrap align-content-between" style="background-image: url('https://i.picsum.photos/id/2/800/600.jpg'); background-size: cover;">
+        <div class="w-100">
+          <h4 class="h4"> <span class="badge badge-danger  sourcePosition text-white">Source</span></h4>
+        </div>
+        <div class="colorGrad w-100">
+          <h4 class="h5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum minus maiores. Repellendus, ipsam.</h4>
+          <h5 class="h6 text-white font-weight-bold">Author</h6>
+        </div>
+      </div>
+     </div>
+
+     <div class="col-12 px-0 mt-2 mt-md-0">
+      <div class="secondArticle d-flex flex-wrap align-content-between" style="background-image: url('https://i.picsum.photos/id/2/800/600.jpg'); background-size: cover;">
+        <div class="w-100">
+          <h4 class="h4"> <span class="badge badge-danger  sourcePosition text-white">Source</span></h4>
+        </div>
+        <div class="colorGrad w-100">
+          <h4 class="h5 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum minus maiores. Repellendus, ipsam.</h4>
+          <h5 class="h6 text-white font-weight-bold">Author</h6>
+        </div>
+      </div>
+     </div>
+     
+     </div>
+     </div>
+    <%# <%= render partial:'displayCard' %>
   </div>
  
 </div>
@@ -16,7 +84,7 @@
 <div class="d-flex justify-content-center mt-4">
 <nav aria-label="Page navigation example">
   <ul class="pagination">
-  <%= render partial:'pagination' %>
+  <%# <%= render partial:'pagination' %>
   
 
   </ul>
