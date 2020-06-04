@@ -1,12 +1,15 @@
 <%@articlesPagination.each do |element| %>
-    <div class="card m-2" style="width: 18rem;">
-      <a href="<%=element["url"]%>" target="_blank" class="text-dark">
-      <img class="card-img-top" src="<%=element["urlToImage"]%>" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title"><%=element["title"]%></h5>
-        <p class="card-text"><%=element["source"]%></p>
-        <p><span><%=element["author"]["first"]%></span> <span><%=element["author"]["last"]%></span></p>
-      </a>
+  <div class="col-12 col-md-4 mx-0 my-1 px-2">
+    <a href="<%=element["url"]%>" target="_blank" class="text-dark">
+      <div class="thirdArticle d-flex flex-wrap align-content-between" style="background-image: url('<%=element["urlToImage"]%>'); background-size: cover;">
+        <div class="w-100">
+          <h4 class="h5"> <span class="badge badge-danger  sourcePosition text-white"><%=element["source"]%></span></h4>
+        </div>
+        <div class="colorGrad w-100">
+          <span class="h6 text-white ml-2"><%=element["title"]%></span>
+          <span class="h6 text-white font-weight-bold ml-2"><%=element["author"]["first"]%> <%=element["author"]["last"]%></span>
+        </div>
       </div>
-    </div>
-  <%end%>
+    </a>
+  </div>
+<%end%>
