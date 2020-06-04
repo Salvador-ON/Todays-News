@@ -1,0 +1,14 @@
+<div class="col-12">
+  <a href="<%=@articlesTop[1]["url"]%>" target="_blank" class="text-dark">
+    <div class="secondArticle d-flex flex-wrap align-content-between" style="background-image: url('<%=@articlesTop[1]["urlToImage"]%>'); background-size: cover;">
+      <div class="w-100">
+        <h4 class="h4"> <span class="badge badge-danger sourcePosition text-white"><%=@articlesTop[1]["source"]%></span></h4>
+      </div>
+      <div class="colorGrad w-100">
+        <h4 class="h5 text-white ml-2"><%=@articlesTop[1]["title"]%></h4>
+        <h5 class="h6 text-white font-weight-bold ml-2"><%=@articlesTop[1]["author"]["first"]%> <%=@articlesTop[1]["author"]["last"]%></h5>
+      </div>
+    </div>
+  </a>
+</div>
+

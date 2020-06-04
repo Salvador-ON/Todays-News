@@ -4,44 +4,17 @@
 <div class="newsContainer mx-1 mx-md-5 bg-lightgrey p-md-4 p-0 py-1 mt-2 rounded">
   <div class="container-fluid my-3 mx-0 mx-auto">
     <div class="row d-flex justify-content-center">
-      <div class="col-12 col-md-8">
-        <div class="firstArticle d-flex flex-wrap align-content-between" style="background-image: url('https://i.picsum.photos/id/2/800/600.jpg'); background-size: cover;">
-          <div class="w-100">
-            <h3 class="h2"> <span class="badge badge-danger  sourcePosition text-white">Source</span></h3>
-          </div>
-          <div class="colorGrad w-100">
-            <h3 class="h4 text-white ml-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum minus maiores. Repellendus, ipsam.</h3>
-           <h5 class="h5 text-white font-weight-bold ml-2">Author</h5>
-          </div>
-        </div>
-      </div>
+      <%= render partial:'displayTop' %>
 
       <div class="col-12 mt-2 mt-md-0 col-md-4">
 
         <div class="row">
 
-          <div class="col-12">
-            <div class="secondArticle d-flex flex-wrap align-content-between" style="background-image: url('https://i.picsum.photos/id/2/800/600.jpg'); background-size: cover;">
-              <div class="w-100">
-                <h4 class="h4"> <span class="badge badge-danger  sourcePosition text-white">Source</span></h4>
-              </div>
-              <div class="colorGrad w-100">
-                <h4 class="h5 text-white ml-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum minus maiores. Repellendus, ipsam.</h4>
-                <h5 class="h6 text-white font-weight-bold ml-2">Author</h6>
-              </div>
-            </div>
-          </div>
+          <%= render partial:'displayMedium1' %>
 
           <div class="col-12 mt-2 mt-md-0">
-            <div class="secondArticle d-flex flex-wrap align-content-between" style="background-image: url('https://i.picsum.photos/id/2/800/600.jpg'); background-size: cover;">
-              <div class="w-100">
-                <h4 class="h4"> <span class="badge badge-danger  sourcePosition text-white">Source</span></h4>
-              </div>
-              <div class="colorGrad w-100">
-                <h4 class="h5 text-white ml-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique harum minus maiores. Repellendus, ipsam.</h4>
-                <h5 class="h6 text-white font-weight-bold ml-2">Author</h6>
-              </div>
-            </div>
+
+            <%= render partial:'displayMedium2' %>
           </div>
      
         </div>

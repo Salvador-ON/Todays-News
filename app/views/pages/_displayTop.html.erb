@@ -1,0 +1,16 @@
+<div class="col-12 col-md-8">
+  <a href="<%=@articlesTop[0]["url"]%>" target="_blank" class="text-dark">
+    <div class="firstArticle d-flex flex-wrap align-content-between" style="background-image: url('<%=@articlesTop[0]["urlToImage"]%>'); background-size: cover;">
+      <div class="w-100">
+        <h3 class="h2"> 
+          <span class="badge badge-danger  sourcePosition text-white"><%=@articlesTop[0]["source"]%></span>
+        </h3>
+      </div>
+      <div class="colorGrad w-100">
+        <h3 class="h4 text-white ml-2"><%=@articlesTop[0]["title"]%></h3>
+        <h5 class="h5 text-white font-weight-bold ml-2"><%=@articlesTop[0]["author"]["first"]%> <%=@articlesTop[0]["author"]["last"]%></h5>
+      </div>
+    </div>
+  </a>
+</div>
+

@@ -5,6 +5,8 @@ class PagesController < ApplicationController
     
     if(@articles.nil?)
       @articles = getApi()
+      @articlesTop = @articles.take 3
+      @articles = @articles.drop 3
       @totalPages = @articles.length() / articlesPage
       
     end
@@ -35,7 +37,7 @@ class PagesController < ApplicationController
       article["source"] = element["source"]["name"]
       article["title"] = element["title"]
       article["url"] = element["url"]
-      article["urlToImage"] = element["urlToImage"]
+      article["urlToImage"] = (!element["urlToImage"].nil? ? element["urlToImage"] : "https://i.picsum.photos/id/2/800/600.jpg") 
       article["author"] = getAutor()
       articles.push(article)
     end
