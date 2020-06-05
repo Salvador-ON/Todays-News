@@ -22,7 +22,7 @@ class PagesController < ApplicationController
     url = 'http://newsapi.org/v2/top-headlines?'\
           'country=us&'\
           'apiKey='
-    req = open(url+ENV["ApiKey"])
+    req = open(url+ENV["APIKEY"])
     response_body = JSON.parse(req.read) 
     result =  response_body["articles"]
 
