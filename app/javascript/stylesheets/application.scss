@@ -21,7 +21,7 @@ body {
 
 .pagination > li > a {
   background-color: white;
-  color: lightgray;
+  color:rgb(182, 182, 182) !important;;
 }
 
 .pagination > li > a:focus,
@@ -35,13 +35,13 @@ body {
 
 .pagination > .active > a {
   color: white;
-  background-color: lightgray !important;
-  border: solid 1px lightgray !important;
+  background-color: rgb(182, 182, 182) !important;
+  border: solid 1px rgb(182, 182, 182) !important;;
 }
 
 .pagination > .active > a:hover {
-  background-color: lightgray !important;
-  border: solid 1px lightgray !important;
+  background-color: rgb(182, 182, 182) !important;;
+  border: solid 1px rgb(182, 182, 182) !important;;
 }
 
 .firstArticle {
@@ -89,5 +89,11 @@ footer{
 
   span{
     font-size: .7rem;
+  }
+}
+
+a {
+  :hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
   }
 }
