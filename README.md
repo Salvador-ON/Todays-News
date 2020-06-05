@@ -1,24 +1,51 @@
-# README
+# Today's news
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Designed landing page for a newspaper website. Using [News API](https://newsapi.org/) to retreive the news' data and [Random User](https://randomuser.me/.) to generate fake authors.
 
-Things you may want to cover:
+# Desktop Resolution
 
-* Ruby version
+![](app/assets/images/screenshot-desktop.jpg)
 
-* System dependencies
+# Mobile Resolution 
+![](app/assets/images/screenshot-mobile.png)
 
-* Configuration
+# Live Demo
 
-* Database creation
+[Live demo](https://todays-news-website.herokuapp.com/ )
 
-* Database initialization
+## Built with
 
-* How to run the test suite
+- HTML5
+- SASS
+- Rail 6
+- Bootstrap
+- JavaScript
+- Ruby 2.7.0
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+# How to run this project
 
-* ...
+```
+- Install Ruby 2.7.0.
+- Install Rails 6.
+- Download Project.
+- Install bundle.
+- Run "bundle install" inside the folder.
+- Run "rails server" inside folder.
+- Go to http://127.0.0.1:3000/
+
+```
+
+## Author
+
+**Salvador Olvera**
+- Linkedin: [Salvador Olvera](https://www.linkedin.com/in/salvador-olvera-n)
+- Github: [@Salvador-ON](https://github.com/Salvador-ON)
+- Twitter: [@Salvador Olvera_ON](https://twitter.com/Salvador_ON) 
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Enjoy!
