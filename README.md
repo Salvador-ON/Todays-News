@@ -3,11 +3,11 @@
 Designed landing page for a newspaper website. Using [News API](https://newsapi.org/) to retreive the news' data and [Random User](https://randomuser.me/.) to generate fake authors.
 
 # Desktop Resolution
-
-![](app/assets/images/screenshot-desktop.jpg)
+<div align="center"><img src="app/assets/images/screenshot-desktop.jpg"></div>
 
 # Mobile Resolution 
-![](app/assets/images/screenshot-mobile.png)
+<div align="center"><img src="app/assets/images/screenshot-mobile.png"></div>
+
 
 # Live Demo
 
