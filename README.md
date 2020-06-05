@@ -1,6 +1,6 @@
 # Today's news
 
-Designed landing page for a newspaper website. Using [News API](https://newsapi.org/) to retreive the news' data and [Random User](https://randomuser.me/.) to generate fake authors.
+Designed a landing page for a newspaper website. Using [News API](https://newsapi.org/) to retrieve the news' data and [Random User](https://randomuser.me/.) to generate fake authors.
 
 # Desktop Resolution
 <div align="center"><img src="app/assets/images/screenshot-desktop.jpg"></div>
