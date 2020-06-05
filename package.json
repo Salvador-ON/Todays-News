@@ -13,7 +13,7 @@
     "turbolinks": "^5.2.0"
   },
   "engines": {
-    "node": "13.11.0"
+    "node": "8.10.0"
   },
   "version": "0.1.0",
   "devDependencies": {
