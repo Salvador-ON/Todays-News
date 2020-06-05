@@ -19,7 +19,7 @@ class PagesController < ApplicationController
   def getApi
     require 'open-uri'
     require 'json'
-    url = 'http://newsapi.org/v2/top-headlines?'\
+    url = 'https://newsapi.org/v2/top-headlines?'\
           'country=us&'\
           'apiKey='
     req = open(url+ENV["APIKEY"])
