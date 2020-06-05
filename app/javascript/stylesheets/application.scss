@@ -45,18 +45,13 @@ body {
 }
 
 .firstArticle {
-  height: 400px;
+  height: 350px;
   width: 100%;
   display: block;
 }
 
 .secondArticle {
-  height: 200px;
-  width: 100%;
-}
-
-.thirdArticle {
-  height: 200px;
+  height: 175px;
   width: 100%;
 }
 
@@ -94,6 +89,6 @@ footer{
 
 a {
   :hover{
-    border-bottom: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
   }
 }
