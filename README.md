@@ -17,7 +17,7 @@ Designed a landing page for a newspaper website. Using [News API](https://newsap
 
 - HTML5
 - SASS
-- Rail 6
+- Rails 6
 - Bootstrap
 - JavaScript
 - Ruby 2.7.0
